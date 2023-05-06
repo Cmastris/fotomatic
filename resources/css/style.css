@@ -83,6 +83,20 @@ header .mobile {
   display: none;
 }
 
+header .button {
+  display: none;  /* Only display CTA button on tablet/mobile */
+}
+
+@media only screen and (max-width: 1200px) {
+  header .button {
+    display: inline;
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
@@ -108,13 +122,6 @@ header .mobile {
   header .mobile li {
     padding: 0;
     height: 22px;
-  }
-
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
   }
 }
 
