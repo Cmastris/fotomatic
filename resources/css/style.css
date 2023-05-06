@@ -101,11 +101,13 @@ header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 2rem;
     width: 100%;
   }
 
   header .mobile li {
     padding: 0;
+    height: 22px;
   }
 
   header .mobile .button {
