@@ -360,8 +360,19 @@ header .button {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #filters-section {
+    padding-bottom: 0;
+  }
+
+  #filters-section .images-container {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -382,10 +393,6 @@ header .button {
   #filters-section .content h3 {
     font-size: .875rem;
     line-height: 1.4;
-  }
-
-  #filters-section .images-container {
-    padding: 0;
   }
 
   #filters-section .extra {
