@@ -235,21 +235,25 @@ header .button {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 5% 2.875rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
   padding: 2rem;
-  margin: 0px 1.25rem;
+  margin: 0px 1.2rem;
   background-color: white;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 2rem auto;
+  margin: 2rem auto 2.5rem auto;
+}
+
+.feature .content {
+  min-height: 7.2rem;
 }
 
 .feature h2 {
@@ -264,6 +268,26 @@ header .button {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+
+@media only screen and (max-width: 1200px) {
+  #features-section {
+    padding: 1rem 0;
+  }
+
+  .feature {
+    margin: 1rem;
+    padding: 0 1rem 1.9rem 1rem;
+  }
+
+  .feature .image-container {
+    width: 95%;
+    margin: 1.5rem auto 1rem auto;
+  }
+
+  .feature .content {
+    min-height: 0;
+  }
 }
 
 @media only screen and (max-width: 890px) {
@@ -287,7 +311,12 @@ header .button {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1rem 1rem 1.9rem 1rem;
+  }
+
+  .feature .image-container {
+    width: 100%;
+    margin: 0 auto 1.5rem auto;
   }
 }
 
