@@ -287,6 +287,7 @@ header .button {
 
   .feature .content {
     min-height: 0;
+    text-align: left;
   }
 }
 
@@ -317,6 +318,10 @@ header .button {
   .feature .image-container {
     width: 100%;
     margin: 0 auto 1.5rem auto;
+  }
+
+  .feature .content {
+    text-align: center;
   }
 
   #feature-1 {
