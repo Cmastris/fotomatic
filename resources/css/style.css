@@ -254,6 +254,7 @@ header .button {
 
 .feature .content {
   min-height: 7.2rem;
+  padding: 0 10%;
   line-height: 1.2;
 }
 
@@ -287,6 +288,7 @@ header .button {
 
   .feature .content {
     min-height: 0;
+    padding: 0 2.5%;
     text-align: left;
   }
 
