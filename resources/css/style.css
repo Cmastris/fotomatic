@@ -408,7 +408,9 @@ header .button {
 }
 
 #quotes-section .content {
-  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 6rem;
 }
 
 #quotes-section .quote {
@@ -422,22 +424,30 @@ header .button {
 
 #quotes-section .quote-citation {
   height: 1.875rem;
+  padding-top: 0.4rem;  /* Better visual alignment with top of quote text */
+}
+
+@media only screen and (max-width: 1200px) {
+  #quotes-section .quote {
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 760px) {
   #quotes-section .content {
-    padding: 1.875rem .625rem;
+    flex-wrap: wrap;  /* Display citation logo beneath quote */
+    padding: 2.5rem 2rem;
   }
 
   #quotes-section .quote {
+    text-align: center;
+    padding-right: 0;
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
   #quotes-section .quote-citation {
-    display: block;
-    padding-top: 1rem;
-    margin: auto;
+    padding-top: 1.2rem;
   }
 }
 
