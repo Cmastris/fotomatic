@@ -177,6 +177,7 @@ header .button {
 }
 
 #sign-up-cta .button {
+  display: block;
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
   font-weight: 500;
